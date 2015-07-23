@@ -1,0 +1,44 @@
+{
+	"name": "aws-google-login",
+	"description": "Log into AWS with Google Apps",
+	"repository": "https://github.com/billinghamj/aws-google-login",
+
+	"env": {
+		"AWS_ROLE": {
+			"description": "The ARN of your Google web identity role set up in AWS IAM",
+			"required": true
+		},
+
+		"GOOGLE_APP_ID": {
+			"description": "The client ID of your Google OAuth web application",
+			"required": true
+		},
+
+		"GOOGLE_APP_SECRET": {
+			"description": "The client secret of your Google OAuth web application",
+			"required": true
+		},
+
+		"GOOGLE_DOMAIN": {
+			"description": "The Google Apps domain to limit authentication to - failure to set this could result in unrestricted public access to your AWS account",
+			"required": false
+		},
+
+		"BASE_URL": {
+			"description": "The URL this application is accessible on",
+			"required": true
+		}
+	},
+
+	"keywords": [
+		"aws",
+		"console",
+		"google",
+		"apps",
+		"sso",
+		"auth",
+		"federated",
+		"login",
+		"signin"
+	]
+}
